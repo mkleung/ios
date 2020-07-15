@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="DVA-If-CgL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GN5-2W-lVM" userLabel="FirstButton">
+                                <rect key="frame" x="45" y="299" width="285" height="69"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Sign in with facebook" backgroundImage="FB">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQt-0D-I8b" userLabel="SecondButton">
+                                <rect key="frame" x="45" y="378" width="285" height="69"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Sign in with Google" backgroundImage="Google">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZV-BN-NJ8" userLabel="thirdButton">
+                                <rect key="frame" x="45" y="457" width="285" height="69"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Sign in with Email" backgroundImage="Email">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login or create an account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jls-Ma-qjG">
+                                <rect key="frame" x="85.5" y="258" width="204" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Social  Squid" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tSH-X5-qWm">
+                                <rect key="frame" x="134.5" y="146" width="106" height="82"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="DVA-If-CgL" secondAttribute="bottom" id="76D-c7-KL1"/>
+                            <constraint firstItem="GN5-2W-lVM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fxn-5e-fNO"/>
+                            <constraint firstItem="Jls-Ma-qjG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HDy-VF-sP9"/>
+                            <constraint firstItem="GN5-2W-lVM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="MR4-nc-9Lc"/>
+                            <constraint firstItem="DVA-If-CgL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Qb7-2N-c2M"/>
+                            <constraint firstAttribute="trailing" secondItem="DVA-If-CgL" secondAttribute="trailing" id="YSH-xJ-6pY"/>
+                            <constraint firstItem="cZV-BN-NJ8" firstAttribute="top" secondItem="OQt-0D-I8b" secondAttribute="bottom" constant="10" id="b1o-s9-NsR"/>
+                            <constraint firstItem="cZV-BN-NJ8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c9S-TJ-hzK"/>
+                            <constraint firstItem="Jls-Ma-qjG" firstAttribute="top" secondItem="tSH-X5-qWm" secondAttribute="bottom" constant="30" id="fE8-Sc-IAl"/>
+                            <constraint firstItem="DVA-If-CgL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fHN-El-Bjk"/>
+                            <constraint firstItem="GN5-2W-lVM" firstAttribute="top" secondItem="Jls-Ma-qjG" secondAttribute="bottom" constant="20" id="fJ0-zf-Xqh"/>
+                            <constraint firstItem="tSH-X5-qWm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="u0L-gQ-939"/>
+                            <constraint firstItem="OQt-0D-I8b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vYV-iK-zQE"/>
+                            <constraint firstItem="OQt-0D-I8b" firstAttribute="top" secondItem="GN5-2W-lVM" secondAttribute="bottom" constant="10" id="wgp-BF-8fm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="414" height="896"/>
+        <image name="Email" width="285" height="69"/>
+        <image name="FB" width="285" height="69"/>
+        <image name="Google" width="285" height="69"/>
+    </resources>
+</document>
